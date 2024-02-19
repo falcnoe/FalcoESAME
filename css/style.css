@@ -1,0 +1,506 @@
+body {
+  margin: 0 0;
+ 
+  font-family: 'Inter', sans-serif;
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+ 
+main {
+  padding-top: 20px;
+  max-width: 100%
+}
+header {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  color: #050505;
+ 
+}
+ 
+header h1 {
+  font-size: 33px;
+}
+ 
+ 
+ 
+nav {
+  font-size: 20px;
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  text-transform:capitalize;
+ 
+}
+header .logo h1 a {
+  color: #000000;
+  z-index: 5;
+  text-decoration: none;
+ 
+}
+ 
+ 
+ 
+ 
+nav ul {
+  list-style: none;
+  padding: 0 ;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+ 
+nav ul li {
+  position: relative;
+}
+ 
+nav ul a {
+  color: #000000;
+  text-decoration: none;
+}
+ 
+.hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+}
+ 
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #000000;
+}
+ 
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+ 
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.hamburger-lines .line4 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+ 
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(30deg);
+}
+ 
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+ 
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-30deg);
+}
+ 
+.checkbox {
+  position: absolute;
+  display: none;
+  height: 32px;
+  width: 32px;
+  top: 16x;
+  right: 16px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+footer {
+  background-color: #5e5e5e;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+ 
+.iconesocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+ 
+}
+ 
+.iconesocial img {
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
+  margin: 5px 40px
+}
+ 
+.infocontatti{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+ 
+}
+.infocontatti p {
+  font-size: 15px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  text-align: left;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto; 
+}
+h5 a {
+  text-decoration: none;
+  color: #000000;
+font-size: 25px;
+}
+h6 a {
+  text-decoration: none;
+  color: #000000;
+font-size: 25px;
+
+}
+
+@media (max-width: 600px) {
+  
+  .grid-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.provasez {
+  position: relative;
+}
+
+.provasez img {
+  margin: 0;
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.provasez h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #fff;
+  z-index: 100;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.primotesto {
+  position: absolute;
+  padding-left: 20%;
+
+  
+}
+
+.primotesto h2 {
+
+  margin: 0;
+  padding-top: 40px;
+  margin-top: 0; 
+}
+
+.sottotesto {
+  height: 20px;
+  width: 400px;
+  object-fit: cover;
+  padding-left: 60%;
+  margin-bottom: 100px;
+  padding-top: 65px;
+  margin-top: 0; 
+  line-height: 1.5;
+}
+.sottotesto p {
+position: relative;
+left: 20%;
+margin: 0%;
+}
+.sottotesto2 {
+  padding-top: 65px;
+  padding-left: 5%;
+  margin-top: 0px;
+  height: 20px;
+  width: 400px;
+  line-height: 1.5;
+}
+.sottotesto2 p {
+  margin: 0;
+  padding-top: 50px;
+  margin-top: 0; 
+
+}
+.sottotestochisiamo {
+  padding-top: 65px;
+  padding-left: 5%;
+  margin-top: 0px;
+  height: 20px; 
+  width: 400px;
+  line-height: 1.5;
+  padding-bottom: 200px;
+ 
+}
+.sottotestochisiamo p {
+  margin: 0;
+  padding-top: 50px;
+  margin-top: 0; 
+  padding-bottom: 200px;
+
+}
+.sottotesto2bold {
+  padding-top: 65px;
+  padding-left: 6%;
+  margin-top: 0px;
+  height: 20px;
+  width: 400px;
+  font-weight: bold;
+  line-height: 1.5;
+  
+}
+.sottotesto2bold p {
+  margin: 0;
+  padding-top: 90px;
+  margin-top: 90; 
+  
+
+}
+.sottotestoprogetto {
+  padding-top: 5px;
+  padding-left: 6%;
+  margin-top: 0px;
+  height: 20px;
+  width: 400px;
+padding-bottom: 10.5%;
+line-height: 1.5;
+
+}
+.sottotestoprogetto p {
+  margin: 0;
+  padding-top: 50px;
+  margin-top: 0; 
+  
+
+}
+.sottotesto3 {
+  height: 20px;
+  width: 400px;
+  object-fit: cover;
+  padding-left: 65%;
+  margin-bottom: 100px;
+  padding-top: 300px;
+  margin-top: 0; 
+  line-height: 1.5;
+}
+.sottotesto3 p {
+position: relative;
+left: 20%;
+margin: 0%;
+}
+.sottotestomaestripagine {
+  height: 20px;
+  width: 400px;
+  object-fit: cover;
+  padding-left: 65%;
+  margin-bottom: 400px;
+  padding-top: 90px;
+  margin-top: 0; 
+  line-height: 1.5; 
+}
+.sottotestomaestripagine p {
+position: relative;
+left: 20%;
+margin: 0%;
+
+padding-bottom: 100%;
+}
+.sottotesto4 {
+  height: 20px;
+  width: 400px;
+  object-fit: cover;
+  padding-left: 65%;
+  margin-bottom: 200px;
+  padding-top:70px;
+  line-height: 1.5; 
+}
+.sottotesto4 p {
+position: relative;
+left: 20%;
+margin: 0%;
+
+}
+.secondotesto {
+  position: absolute;
+  padding-left: 20%;
+  margin-top:5opx;
+  
+}
+
+.secondotesto h2 {
+  margin: 0;
+  padding-top: 40px;
+  margin-top: 0;
+}
+.scopri {
+position: relative;
+padding-left: 60%;
+padding-bottom: 100px;
+padding-top: 20px;
+}
+.scopri a {
+  text-decoration: none;
+  color: #000000;
+}
+.nomi {
+  position: relative;
+  padding-left: 60%;
+  padding-bottom: 5px;
+}
+.nomi a {
+      text-decoration: none;
+      color: #000000;
+}
+
+.nomeultimo {
+      position: relative;
+      padding-left: 60%;
+  padding-bottom: 70px;
+}
+.nomeultimo a {
+          text-decoration: none;
+          color: #000000;
+}
+@media screen and (max-width:600px) {
+  .sottotestochisiamo.primotesto,.secondotesto,.sottotesto2bold,.sottotestoprogetto, .primotesto, .sottotesto, .secondotesto, .sottotesto2,.sottotesto3,.sottotesto4,.sottotesto2bold,.sottotestomaestripagine{
+    padding-left: 3%;
+ max-width: 80%;
+   padding-bottom: 10%; 
+  
+  }
+}
+@media screen and (max-width:600px) {
+  .scopri, .nomi,.nomeultimo{
+     padding-left: 3%;
+  max-width: 80%;
+  
+   
+   }
+
+  }
+.titolomaestri h1{
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+
+
+.immaginecose {
+  max-width: 60%; 
+  margin: 0 auto; 
+  padding-bottom: 5%; 
+padding-top: 5%;
+}
+
+.immaginecose img {
+  width: 400%; 
+  height: auto; 
+}
+@media only screen and (max-width: 600px) {
+  .checkbox {
+    display: block;
+  }
+  .provasez{
+      position: static;
+  }
+  .provatesto h2{
+      z-index: 1;
+  }
+  nav ul {
+    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+   
+  }
+ 
+  input[type="checkbox"]:checked ~ nav ul {
+    opacity: 100;
+    z-index: 2;
+  }
+
+  .hamburger-lines {
+    opacity: 100;
+    z-index: 3;
+  }
+
+  ul li {
+    display: block;
+  }
+
+   .submenu {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    margin:0;
+}
+}
+
+.gridduefoto {  
+  display: flex;
+}
+.immaginigrid {
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    padding-bottom: 100px;
+  
+}
+
+
+
+
+
